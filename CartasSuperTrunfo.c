@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    //Dados da primeira carta
+
+//Dados da primeira carta
     char estado1;
     char codigo1[4];
     char cidade1[50];
@@ -19,7 +20,7 @@ int main() {
     float pib2;
     int pontosturisticos2;
     
-    //Comando para escrever o nome das variáveis
+//Comando para escrever o nome das variáveis
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado1);
     
@@ -62,6 +63,7 @@ int main() {
     printf("Digite o pib: ");
     scanf("%f", &pib2);
 
+//Comando para exibir na tela os dados informados da carta 1
     printf("\n---- Dados da Carta 1 ----\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
@@ -71,6 +73,7 @@ int main() {
     printf("Area: %f\n", area1);
     printf("PIB: %f\n", pib1);
 
+//Comando para exibir na tela os dados informados da carta 2
     printf("\n---- Dados da Carta 2 ----\n");
     printf("Estado: %c\n", estado2);
     printf("Codigo: %s\n", codigo2);
