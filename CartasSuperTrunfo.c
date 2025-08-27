@@ -82,6 +82,6 @@ int main() {
     printf("Pontos Turisticos: %d\n", pontosturisticos2);
     printf("Area: %f\n", area2);
     printf("PIB: %f\n", pib2);
-
+//Até aqui é o Nível Novato do desafio
     return 0;
 }
