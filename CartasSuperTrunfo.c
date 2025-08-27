@@ -10,6 +10,8 @@ int main() {
     float area1;
     float pib1;
     int pontosturisticos1;
+    float densidade1;
+    float pibpercapita1;
 
 //Dados da segunda carta
     char estado2;
@@ -19,7 +21,8 @@ int main() {
     float area2;
     float pib2;
     int pontosturisticos2;
-    
+    float densidade2;
+    float pibpercapita2;
 //Comando para escrever o nome das variáveis
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado1);
@@ -70,9 +73,15 @@ int main() {
     printf("Cidade: %s\n", cidade1);
     printf("Populacao: %f\n", populacao1);
     printf("Pontos Turisticos: %d\n", pontosturisticos1);
-    printf("Area: %f\n", area1);
-    printf("PIB: %f\n", pib1);
-
+    printf("Area: %f km²\n", area1);
+    printf("PIB: %f bilhões de reais\n", pib1);
+//Até aqui é o Nível Novato do desafio
+//A partir daqui é o Nível Aventureiro
+    densidade1 = populacao1 / area1;
+    printf("Densidade populacional: %.2f hab/km²\n", densidade1);
+    pibpercapita1 = pib1 / populacao1;
+    printf("PIB per capita: %.2f reais\n", pibpercapita1);
+    
 //Comando para exibir na tela os dados informados da carta 2
     printf("\n---- Dados da Carta 2 ----\n");
     printf("Estado: %c\n", estado2);
@@ -80,8 +89,14 @@ int main() {
     printf("Cidade: %s\n", cidade2);
     printf("Populacao: %f\n", populacao2);
     printf("Pontos Turisticos: %d\n", pontosturisticos2);
-    printf("Area: %f\n", area2);
-    printf("PIB: %f\n", pib2);
+    printf("Area: %f km²\n", area2);
+    printf("PIB: %f bilhões de reais\n", pib2);
 //Até aqui é o Nível Novato do desafio
+//A partir daqui é o Nível Aventureiro
+    densidade2 = populacao2 / area2;
+    printf("Densidade populacional: %.2f hab/km²\n", densidade2);
+    pibpercapita2 = pib2 / populacao2;
+    printf("PIB per capita: %.2f reais\n", pibpercapita2);
+    
     return 0;
 }
